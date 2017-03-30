@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="MVC"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_explain"
+            android:lineSpacingMultiplier="1.2"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_horizontal_margin" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_username"
+            android:hint="用户名"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_horizontal_margin" />
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_password"
+            android:hint="密码"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_horizontal_margin" />
+        <TextView
+            android:id="@+id/tv_show_info"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:background="#553F51B5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_horizontal_margin" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/design_bottom_navigation_height">
+            <Button
+                android:id="@+id/btn_save"
+                android:text="保存信息"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <android.support.v4.widget.Space
+                android:layout_width="12dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btn_get"
+                android:text="获取信息"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
